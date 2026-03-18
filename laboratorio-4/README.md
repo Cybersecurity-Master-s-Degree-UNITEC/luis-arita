@@ -13,6 +13,7 @@ Posteriormente, se desarrollaron scripts en **bash** para automatizar la ejecuci
 ## Capturas de pantalla de la configuración de la máquina virtual
 
 Para el laboratorio se utilizó VMWare Workstation 25. Desde el sitio oficial de Kali Linux se descargó una imagen preconfigurada de la versión 2025.4. Para la creación de la máquina virtual se seleccionó una configuración lo más cercana posible a la recomendada. En el repositorio se incluye el archivo VMDX con la configuración empleada. A continuación, se presentan las capturas de pantalla correspondientes a los parámetros más relevantes de la máquina virtual.
+ [`kali-linux-2025.4-vmware-amd64.vmx`](kali-linux-2025.4-vmware-amd64.vmx)
 
 ![](image0.png)
 
@@ -138,7 +139,7 @@ A manera de ejercicio decidí hacer un solo script en bash que cumpliera con:
 
 6.    Mostrará el gráfico
 
-A manera ilustrativa se incluye el código en la siguiente imagen. Para ver el detalle completo, el mismo está disponible en el repositorio
+A manera ilustrativa se incluye el código en la siguiente imagen. Para ver el detalle completo, el mismo está disponible en [`ejercicio1.sh`](ejercicio1.sh)
 
 ![](image10.png)
 
@@ -146,7 +147,7 @@ Ilustración 9 Script utilizado para el laboratorio
 
 ## Generación de las gráficas
 
-En sustitución a Google Colab realizé la generación con una herramienta llamada **gnuplot**. Esta herramienta permite generar gráficos desde línea de comando lo cual me pareció ideal para mi caso de uso de un solo script. El gnuplot trabaja definiéndole un archivo en un formato especifico.
+En sustitución a Google Colab realizé la generación con una herramienta llamada **gnuplot**. Esta herramienta permite generar gráficos desde línea de comando lo cual me pareció ideal para mi caso de uso de un solo [`script`](ejercicio1.gp). El gnuplot trabaja definiéndole un archivo en un formato especifico.
 
 ```
 set datafile separator ","
@@ -215,7 +216,7 @@ Cuando el conjunto de datos que se está accediendo (working set) ya no cabe com
 
 # Experimento de Comportamiento de Cache
 
-El ejercicio 2 también se implementó en **bash**. Se realizaron pruebas con distintos tamaños de arreglo hasta identificar uno cuyo tiempo de ejecución fuera de al menos unos segundos en cada caso. Para simplificar la ejecución, se creó un único script que incluye ambas corridas del experimento.
+El ejercicio 2 también se implementó en **bash**. Se realizaron pruebas con distintos tamaños de arreglo hasta identificar uno cuyo tiempo de ejecución fuera de al menos unos segundos en cada caso. Para simplificar la ejecución, se creó un único [`script`](ejercicio2.sh) que incluye ambas corridas del experimento.
 
 ![](image13.png)
 

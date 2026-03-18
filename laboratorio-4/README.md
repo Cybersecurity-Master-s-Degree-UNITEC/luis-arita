@@ -28,11 +28,7 @@ Ilustración 3 Configuración de Disco Duro y se puede visualizar el uso de NAT
 
   
 
-## |  |
-| --- |
-|  |  |
-  
-Capturas de la ejecución de los comandos de verificación
+## Capturas de la ejecución de los comandos de verificación
 
 ![](image3.png)
 
